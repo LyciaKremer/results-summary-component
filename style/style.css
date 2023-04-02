@@ -67,6 +67,13 @@ h3 {
   border-radius: 30px;
   max-width: 740px;
   box-shadow: 10px 10px 25px var(--pale-blue);
+  margin: 25px;
+}
+@media (max-width: 700px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .result {
   display: flex;
@@ -166,6 +173,7 @@ button {
   font-weight: 700;
   background-color: var(--dark-gray-blue);
   color: var(--white);
+  border: none;
 }
 footer {
   display: flex;
