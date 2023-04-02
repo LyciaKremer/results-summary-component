@@ -65,7 +65,7 @@ h3 {
   grid-template-columns: 1fr 1fr;
   background-color: var(--white);
   border-radius: 30px;
-  width: 750px;
+  max-width: 750px;
   box-shadow: 10px 10px 25px var(--pale-blue);
   margin: 25px;
 }
