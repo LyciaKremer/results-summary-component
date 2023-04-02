@@ -65,15 +65,9 @@ h3 {
   grid-template-columns: 1fr 1fr;
   background-color: var(--white);
   border-radius: 30px;
-  max-width: 740px;
+  width: 750px;
   box-shadow: 10px 10px 25px var(--pale-blue);
   margin: 25px;
-}
-@media (max-width: 700px) {
-  .card {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .result {
   display: flex;
@@ -143,10 +137,11 @@ h3 {
 }
 .value {
   color: hsla(224, 30%, 27%, 0.539);
+  font-weight: 700;
 }
 .value > span {
   color: var(--dark-gray-blue);
-  font-weight: 500;
+  font-weight: 700;
 }
 .red-item {
   color: var(--light-red);
@@ -165,24 +160,47 @@ h3 {
   background-color: hsl(234, 85%, 45%, 0.05);
 }
 button {
+  display: flex;
+  justify-content: center;
   padding: 15px;
-  width: 100%;
   border-radius: 30px;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   background-color: var(--dark-gray-blue);
   color: var(--white);
+  cursor: pointer;
   border: none;
+}
+button:hover {
+  background: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%) 5%,
+    hsl(241, 81%, 54%) 95%
+  );
 }
 footer {
   display: flex;
   position: absolute;
-  float: bottom;
-  bottom: 0;
-  margin-bottom: 20px;
-  gap: 5px;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  float: bottom;
   width: 100%;
+  bottom: 0;
+  gap: 5px;
+}
+@media (max-width: 700px) {
+  body {
+    padding: 200px 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
